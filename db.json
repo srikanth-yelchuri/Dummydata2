@@ -1,198 +1,152 @@
 {
-"shipment" :[
-  {"data" : [100, 500, 200, 40, 120]}
-  ], "IBASN": [
-    {
-    "MessageType": "IBASN",
-    "TotalAck": 2000,
-    "TotalNack": 200,
-    "Vendor": [{
-            "VName": "SYNCREON",
-            "Acked": 400,  
-            "Nack": 100,
-            "Facility": [{
-                "FName": "COV",
-                "Acked": 200,
-                "Nack": 75
-            }, {
-                "FName": "DBI",
-                "Acked": 200,
-                "Nack": 25
-            }, 
-                                             {
-                "FName": "TIL",
-                "Acked": 200,
-                "Nack": 25
-            }]
-     },
-     {
-            "VName": "YCH",
-            "Acked": 1200,
-            "Nack": 300,
-            "Facility": [{
-                "FName": "APM",
-                "Acked": 1000,
-                "Nack": 280
-            }, {
-                "FName": "DAPM",
-                "Acked": 200,
-                "Nack": 20
-            },{
-                "FName": "DMG",
-                "Acked": 1000,
-                "Nack": 280
-            }, {
-                "FName": "MES",
-                "Acked": 200,
-                "Nack": 20
-            }]
-     }
-    ]
-}
-
-    ], "IBASNRECEIPT":[
+"SO_ORDERTRACKING": [
+  {
+   "STATUS":[
       {
-    "MessageType": "IBASNRCPT",
-    "TotalAck": 1000,
-    "TotalNack": 100,
-    "Vendor": [{
-            "VName": "SYNCREON",
-            "Acked": 300,  
-            "Nack": 100,
-            "Facility": [{
-                "FName": "COV",
-                "Acked": 100,
-                "Nack": 25
-            }, {
-                "FName": "DBI",
-                "Acked": 200,
-                "Nack": 25
-            }, 
-                                             {
-                "FName": "TIL",
-                "Acked": 200,
-                "Nack": 25
-            }]
-     },
-     {
-            "VName": "YCH",
-            "Acked": 1200,
-            "Nack": 300,
-            "Facility": [{
-                "FName": "APM",
-                "Acked": 1000,
-                "Nack": 280
-            }, {
-                "FName": "DAPM",
-                "Acked": 200,
-                "Nack": 20
-            },{
-                "FName": "DMG",
-                "Acked": 1000,
-                "Nack": 280
-            }, {
-                "FName": "MES",
-                "Acked": 200,
-                "Nack": 20
-            }]
-     }
-    ]
-}
-
-    ],"WO":[
+         "CODE":"ROUTEPLAN",
+         "VALUE":"ROUTEPLAN",
+         "DESCRIPTION":"ROUTEPLAN",
+         "COMPLETED":"Y"
+      },
       {
-    "MessageType": "WO",
-    "TotalAck": 2000,
-    "TotalNack": 300,
-    "Vendor": [{
-            "VName": "SYNCREON",
-            "Acked": 500,  
-            "Nack": 100,
-            "Facility": [{
-                "FName": "COV",
-                "Acked": 100,
-                "Nack": 25
-            }, {
-                "FName": "DBI",
-                "Acked": 200,
-                "Nack": 25
-            }, 
-                                             {
-                "FName": "TIL",
-                "Acked": 200,
-                "Nack": 50
-            }]
-     },
-     {
-            "VName": "YCH",
-            "Acked": 1000,
-            "Nack": 100,
-            "Facility": [{
-                "FName": "APM",
-                "Acked": 500,
-                "Nack": 20
-            }, {
-                "FName": "DAPM",
-                "Acked": 200,
-                "Nack": 20
-            },{
-                "FName": "DMG",
-                "Acked": 100,
-                "Nack": 40
-            }, {
-                "FName": "MES",
-                "Acked": 200,
-                "Nack": 20
-            }]
-     },
-	      {
-            "VName": "CEVA_3PL",
-            "Acked": 300,
-            "Nack": 50,
-            "Facility": [{
-                "FName": "FGN",
-                "Acked": 150,
-                "Nack": 30
-            }, {
-                "FName": "3NV",
-                "Acked": 200,
-                "Nack": 20
-            },{
-                "FName": "FG3",
-                "Acked": 150,
-                "Nack": 50
-            }]
-     },
-	 {
-            "VName": "KLS",
-            "Acked": 200,
-            "Nack": 50,
-            "Facility": [{
-                "FName": "HBD",
-                "Acked": 100,
-                "Nack": 20
-            }, {
-                "FName": "HBM",
-                "Acked": 20,
-                "Nack": 20
-            },{
-                "FName": "HCM",
-                "Acked": 30,
-                "Nack": 10
-            }]
-     }, 
-	 {
-            "VName": "KNN",
-            "Acked": 100,
-            "Nack": 50,
-            "Facility": [{
-                "FName": "MXC",
-                "Acked": 100,
-                "Nack": 50
-            }]
-     }
-    ]
+         "CODE":"ROUTED",
+         "VALUE":"ROUTED",
+         "DESCRIPTION":"ROUTED",
+         "COMPLETED":"Y"
+      },
+      {
+         "CODE":"STARTED",
+         "VALUE":"STARTED",
+         "DESCRIPTION":"STARTED",
+         "COMPLETED":"Y"
+      },
+      {
+         "CODE":"SHIPPED",
+         "VALUE":"SHIPPED",
+         "DESCRIPTION":"SHIPPED",
+         "COMPLETED":"N"
+      },
+      {
+         "CODE":"STAGED",
+         "VALUE":"STAGED",
+         "DESCRIPTION":"STAGED",
+         "COMPLETED":"N"
+      },
+      {
+         "CODE":"MANIFESTED",
+         "VALUE":"MANIFESTED",
+         "DESCRIPTION":"MANIFESTED",
+         "COMPLETED":"N"
+      },
+      {
+         "CODE":"DELIVERED",
+         "VALUE":"DELIVERED",
+         "DESCRIPTION":"DELIVERED",
+         "COMPLETED":"N"
+      }
+   ],
+   "WORKORDERS":[
+      {
+         "WO_ID":"50000243020",
+         "PARENT_WO_ID":"",
+         "WO_TYPE":"PICK",
+         "SHIP_FROM":"AMC",
+         "SHIP_TO":"CUST"
+      },
+      {
+         "WO_ID":"50000243050",
+         "PARENT_WO_ID":"50000243020",
+         "WO_TYPE":"PICK",
+         "SHIP_FROM":"FG3",
+         "SHIP_TO":"AMC"
+      },
+      {
+         "WO_ID":"50000243070",
+         "PARENT_WO_ID":"50000243050",
+         "WO_TYPE":"MAKE",
+         "SHIP_FROM":"CET",
+         "SHIP_TO":"FG3"
+      }
+   ],
+   "ASN":[
+      {
+         "ASN_NUMBER":"FG389843020",
+         "SHIPFROM":"FG3",
+         "SHIPTO":"AMC"
+      },
+      {
+         "ASN_NUMBER":"CET23452344",
+         "SHIPFROM":"CET",
+         "SHIPTO":"FG3"
+      }
+   ],
+   "SN":[
+      {
+         "SN_NUMBER":"SN418689173",
+         "WAYBILLNUMBER":"2561",
+         "SCACID":"DNZA"
+      }
+   ]
 }
-
-    ]
+],
+	"WO_ORDERTRACKING": [
+  {
+   "STATUS":[
+      {
+         "CODE":"100",
+         "VALUE":"NEW",
+         "DESCRIPTION":"DOWNLOADED",
+      },
+      {
+         "CODE":"2000",
+         "VALUE":"SENT",
+         "DESCRIPTION":"VPO sent to Vendor",
+      },
+      {
+         "CODE":"3000",
+         "VALUE":"ACK",
+         "DESCRIPTION":"VPO Acked by Vendor",
+      },
+      {
+         "CODE":"4000",
+         "VALUE":"STARTED",
+         "DESCRIPTION":"VPO started by Vendor",
+      },
+      {
+         "CODE":"5000",
+         "VALUE":"STAGED",
+         "DESCRIPTION":"VPO Ship Staged by Vendor",
+      },
+      {
+         "CODE":"8000",
+         "VALUE":"COMPLETED",
+         "DESCRIPTION":"VPO Completed",
+      }
+   ],
+   "WORKORDERS":[
+      {
+         "WO_ID":"50000243020",
+         "PARENT_WO_ID":"",
+         "WO_TYPE":"PICK",
+         "SHIP_FROM":"AMC",
+         "SHIP_TO":"CUST"
+      }
+    
+   ],
+   "ASN":[
+      {
+         "ASN_NUMBER":"FG389843020",
+         "SHIPFROM":"FG3",
+         "SHIPTO":"AMC"
+      }
+   ],
+   "SN":[
+      {
+         "SN_NUMBER":"SN418689173",
+         "WAYBILLNUMBER":"2561",
+         "SCACID":"DNZA"
+      }
+   ]
+}
+]
 }
