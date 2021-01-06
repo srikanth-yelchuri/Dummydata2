@@ -1,151 +1,177 @@
 {
-  "SO_ORDERTRACKING": [
-    {
-      "STATUS": [
-        {
-          "CODE": "ROUTEPLAN",
-          "VALUE": "ROUTEPLAN",
-          "DESCRIPTION": "ROUTEPLAN",
-          "COMPLETED": "Y"
-        },
-        {
-          "CODE": "ROUTED",
-          "VALUE": "ROUTED",
-          "DESCRIPTION": "ROUTED",
-          "COMPLETED": "Y"
-        },
-        {
-          "CODE": "STARTED",
-          "VALUE": "STARTED",
-          "DESCRIPTION": "STARTED",
-          "COMPLETED": "Y"
-        },
-        {
-          "CODE": "SHIPPED",
-          "VALUE": "SHIPPED",
-          "DESCRIPTION": "SHIPPED",
-          "COMPLETED": "N"
-        },
-        {
-          "CODE": "STAGED",
-          "VALUE": "STAGED",
-          "DESCRIPTION": "STAGED",
-          "COMPLETED": "N"
-        },
-        {
-          "CODE": "MANIFESTED",
-          "VALUE": "MANIFESTED",
-          "DESCRIPTION": "MANIFESTED",
-          "COMPLETED": "N"
-        },
-        {
-          "CODE": "DELIVERED",
-          "VALUE": "DELIVERED",
-          "DESCRIPTION": "DELIVERED",
-          "COMPLETED": "N"
-        }
-      ],
-      "WORKORDERS": [
-        {
-          "WO_ID": "50000243020",
-          "PARENT_WO_ID": "",
-          "WO_TYPE": "PICK",
-          "SHIP_FROM": "AMC",
-          "SHIP_TO": "CUST"
-        },
-        {
-          "WO_ID": "50000243050",
-          "PARENT_WO_ID": "50000243020",
-          "WO_TYPE": "PICK",
-          "SHIP_FROM": "FG3",
-          "SHIP_TO": "AMC"
-        },
-        {
-          "WO_ID": "50000243070",
-          "PARENT_WO_ID": "50000243050",
-          "WO_TYPE": "MAKE",
-          "SHIP_FROM": "CET",
-          "SHIP_TO": "FG3"
-        }
-      ],
-      "ASN": [
-        {
-          "ASN_NUMBER": "FG389843020",
-          "SHIPFROM": "FG3",
-          "SHIPTO": "AMC"
-        },
-        {
-          "ASN_NUMBER": "CET23452344",
-          "SHIPFROM": "CET",
-          "SHIPTO": "FG3"
-        }
-      ],
-      "SN": [
-        {
-          "SN_NUMBER": "SN418689173",
-          "WAYBILLNUMBER": "2561",
-          "SCACID": "DNZA"
-        }
-      ]
-    }
-  ],
-  "WO_ORDERTRACKING": [
-    {
-      "STATUS": [
-        {
-          "CODE": "100",
-          "VALUE": "NEW",
-          "DESCRIPTION": "DOWNLOADED"
-        },
-        {
-          "CODE": "2000",
-          "VALUE": "SENT",
-          "DESCRIPTION": "VPO sent to Vendor"
-        },
-        {
-          "CODE": "3000",
-          "VALUE": "ACK",
-          "DESCRIPTION": "VPO Acked by Vendor"
-        },
-        {
-          "CODE": "4000",
-          "VALUE": "STARTED",
-          "DESCRIPTION": "VPO started by Vendor"
-        },
-        {
-          "CODE": "5000",
-          "VALUE": "STAGED",
-          "DESCRIPTION": "VPO Ship Staged by Vendor"
-        },
-        {
-          "CODE": "8000",
-          "VALUE": "COMPLETED",
-          "DESCRIPTION": "VPO Completed"
-        }
-      ],
-      "WORKORDERS": [
-        {
-          "WO_ID": "50000243020",
-          "PARENT_WO_ID": "",
-          "WO_TYPE": "PICK",
-          "SHIP_FROM": "AMC",
-          "SHIP_TO": "CUST"
-        }
-      ],
-      "ASN": [
-        {
-          "ASN_NUMBER": "FG389843020",
-          "SHIPFROM": "FG3",
-          "SHIPTO": "AMC"
-        }
-      ],
-      "SN": [
-        {
-          "SN_NUMBER": "SN418689173",
-          "WAYBILLNUMBER": "2561",
-          "SCACID": "DNZA"
-        }
-      ]
-    }
-  ]
+   "SO_ORDERTRACKING":[
+      {
+         "STATUS":[
+            {
+               "CODE":"ROUTEPLAN",
+               "VALUE":"ROUTEPLAN",
+               "DESCRIPTION":"ROUTEPLAN",
+               "COMPLETED":"Y"
+            },
+            {
+               "CODE":"ROUTED",
+               "VALUE":"ROUTED",
+               "DESCRIPTION":"ROUTED",
+               "COMPLETED":"Y"
+            },
+            {
+               "CODE":"STARTED",
+               "VALUE":"STARTED",
+               "DESCRIPTION":"STARTED",
+               "COMPLETED":"Y"
+            },
+            {
+               "CODE":"SHIPPED",
+               "VALUE":"SHIPPED",
+               "DESCRIPTION":"SHIPPED",
+               "COMPLETED":"N"
+            },
+            {
+               "CODE":"STAGED",
+               "VALUE":"STAGED",
+               "DESCRIPTION":"STAGED",
+               "COMPLETED":"N"
+            },
+            {
+               "CODE":"MANIFESTED",
+               "VALUE":"MANIFESTED",
+               "DESCRIPTION":"MANIFESTED",
+               "COMPLETED":"N"
+            },
+            {
+               "CODE":"DELIVERED",
+               "VALUE":"DELIVERED",
+               "DESCRIPTION":"DELIVERED",
+               "COMPLETED":"N"
+            }
+         ],
+         "WORKORDERS":[
+            {
+               "WO_ID":"50000243020",
+               "PARENT_WO_ID":"",
+               "WO_TYPE":"PICK",
+               "SHIP_FROM":"AMC",
+               "SHIP_TO":"CUST"
+            },
+            {
+               "WO_ID":"50000243050",
+               "PARENT_WO_ID":"50000243020",
+               "WO_TYPE":"PICK",
+               "SHIP_FROM":"FG3",
+               "SHIP_TO":"AMC"
+            },
+            {
+               "WO_ID":"50000243070",
+               "PARENT_WO_ID":"50000243050",
+               "WO_TYPE":"MAKE",
+               "SHIP_FROM":"CET",
+               "SHIP_TO":"FG3"
+            }
+         ],
+         "ASN":[
+            {
+               "ASN_NUMBER":"FG389843020",
+               "SHIPFROM":"FG3",
+               "SHIPTO":"AMC"
+            },
+            {
+               "ASN_NUMBER":"CET23452344",
+               "SHIPFROM":"CET",
+               "SHIPTO":"FG3"
+            }
+         ],
+         "SN":[
+            {
+               "SN_NUMBER":"SN418689173",
+               "WAYBILLNUMBER":"2561",
+               "SCACID":"DNZA"
+            }
+         ]
+      }
+   ],
+   "WO_ORDERTRACKING":[
+      {
+         "STATUS":[
+            {
+               "CODE":"100",
+               "VALUE":"NEW",
+               "DESCRIPTION":"DOWNLOADED"
+            },
+            {
+               "CODE":"2000",
+               "VALUE":"SENT",
+               "DESCRIPTION":"VPO sent to Vendor"
+            },
+            {
+               "CODE":"3000",
+               "VALUE":"ACK",
+               "DESCRIPTION":"VPO Acked by Vendor"
+            },
+            {
+               "CODE":"4000",
+               "VALUE":"STARTED",
+               "DESCRIPTION":"VPO started by Vendor"
+            },
+            {
+               "CODE":"5000",
+               "VALUE":"STAGED",
+               "DESCRIPTION":"VPO Ship Staged by Vendor"
+            },
+            {
+               "CODE":"8000",
+               "VALUE":"COMPLETED",
+               "DESCRIPTION":"VPO Completed"
+            }
+         ],
+         "WORKORDERS":[
+            {
+               "WO_ID":"50000243020",
+               "PARENT_WO_ID":"",
+               "WO_TYPE":"PICK",
+               "SHIP_FROM":"AMC",
+               "SHIP_TO":"CUST"
+            }
+         ],
+         "ASN":[
+            {
+               "ASN_NUMBER":"FG389843020",
+               "SHIPFROM":"FG3",
+               "SHIPTO":"AMC"
+            }
+         ],
+         "SN":[
+            {
+               "SN_NUMBER":"SN418689173",
+               "WAYBILLNUMBER":"2561",
+               "SCACID":"DNZA"
+            }
+         ]
+      }
+   ],
+   "DAO_SERVERS":[
+      {
+         "name":"ausplsoawlsa41",
+         "state":"RUNNING",
+         "health":"HEALTH_OK",
+         "live":"3 Days"
+      },
+      {
+         "name":"ausplsoawlsm41",
+         "state":"RUNNING",
+         "health":"HEALTH_OK",
+         "live":"3 Days"
+      },
+      {
+         "name":"ausplsoawlsm42",
+         "state":"RUNNING",
+         "health":"HEALTH_OK",
+         "live":"3 Days"
+      },
+	  {
+         "name":"ausplsoawlsm43",
+         "state":"RUNNING",
+         "health":"HEALTH_OK",
+         "live":"3 Days"
+      }
+   ]
 }
